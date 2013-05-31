@@ -9,7 +9,7 @@
 	<name>spr-data</name>
 
 	<build>
-		<finalName>dpr-data</finalName>
+		<finalName>spr-data</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -19,6 +19,14 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+			<plugin> 
+                <groupId>org.eclipse.jetty</groupId> 
+                <artifactId>jetty-maven-plugin</artifactId> 
+				<version>9.0.3.v20130506</version> 
+				<configuration>
+					<scanIntervalSeconds>1</scanIntervalSeconds>
+				</configuration>
+            </plugin>
 		</plugins>
 	</build>
 
