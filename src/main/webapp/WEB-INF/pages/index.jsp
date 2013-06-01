@@ -14,5 +14,11 @@ Welcome to "Shop application".<br/>
 <a href="${pageContext.request.contextPath}/shop/create.html">Create a new shop</a><br/>
 <a href="${pageContext.request.contextPath}/shop/list.html">View all shops</a><br/>
 </p>
+
+ <form method="post" action="${pageContext.request.contextPath}/shop/find.html">
+<input type='text' id='newfield' name='newfield' value=''/>
+<input type="submit" value="Find" name="submit" />
+</form>
+
 </body>
 </html>
